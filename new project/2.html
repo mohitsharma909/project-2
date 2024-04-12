@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Separate CSS file -->
+    <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem;
+            background-color: #112C41;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: #112C41;
+        }
+
+        /* Logo in the navbar */
+        .logo img {
+            height: 50px;
+            width: auto;
+        }
+
+        /* Background Image Section */
+        .bg-image {
+            background-image: url("Group12.png");
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+
+        /* Panel Section */
+        .panel {
+            padding: 1rem;
+            background-color: #112C41;
+            color: white;
+            text-align: center;
+        }
+
+        /* Content Section */
+        .content-section {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Image with text */
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 1rem;
+        }
+
+        /* Flex containers */
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .flex-item {
+            flex: 1 1 48%;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: black;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            /* Navigation Bar */
+            .navbar {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .logo {
+                margin-bottom: 1rem;
+            }
+
+            /* Flex containers */
+            .flex-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .flex-item {
+                width: 100%;
+            }
+
+            /* Content alignment */
+            .content img {
+                margin: 1rem auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div>
+            <a href="#projects">Projects</a>
+            <a href="#expertise">Expertise</a>
+            <a href="#about">About Us</a>
+            <a href="#people">People</a>
+        </div>
+        <div class="logo">
+            <a href="#home">
+                <img src="Logo.png" alt="Logo">
+            </a>
+        </div>
+        <div>
+            <a href="#careers">Careers</a>
+            <a href="#au">AU</a>
+        </div>
+    </nav>
+
+    <!-- Background Image Section -->
+    <div class="bg-image">
+        <div class="heading">
+            <h1>Headline #1</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+
+    <!-- Panel Section -->
+    <div class="panel">
+        <p>We stay connected</p>
+        <p>We believe in diversity and inclusion</p>
+        <p>We celebrate success</p>
+    </div>
+
+    <!-- Content Section -->
+    <div class="content-section">
+        <h2>We stay connected</h2>
+        <p>We strive to stay connected as a team through communication and collaboration.</p>
+        <img src="Rectangle 39.png" alt="Example Image">
+
+        <div class="flex-container">
+            <div class="flex-item">
+                <h3>We believe in diversity and inclusion</h3>
+                <p>At CaSE we do not just accept difference — we celebrate it, support it, and thrive on it for the benefit of our employees, services, and community.</p>
+            </div>
+            <div class="flex-item">
+                <img src="Group 1593.png" alt="Diversity Image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Your Company Name</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sticky Navigation Bar with Background Image</title>
+<style>
+  .bg-image {
+    background-image:url("Group 12.png");
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  /* Style the navigation bar */
+  .navbar {
+    overflow: hidden;
+    position: fixed; /* Change from 'sticky' to 'fixed' */
+    top: 0;
+    margin-top: 100px;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+  }
+
+  .logo {
+    background-image: url('Logo.png');
+    height: 80px;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 0 auto; /* Center the logo */
+  }
+  .heading {
+    color: #ddd;
+    margin-top: 350px;
+    margin-right: 680px;
+  }
+  .panel {
+    background-color: #112C41;
+    height: 120px;
+  }
+  .margin {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .content {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+ 
+
+  .color {
+    color: orangered;
+  }
+
+  .p1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-right: 800px;
+  }
+
+  .tpage {
+    background-color: #112C41;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .p3 {
+    color: #FFFFFF;
+    margin-top: 20px;
+    text-align: center;
+    margin-left: 1000px;
+    font-size: 1rem;
+  }
+
+
+/* img2 class */
+
+
+  .img2 img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .content {
+      flex: 1;
+      margin-top: 0;
+      margin-right: 20px;
+      text-align: left;
+    }
+   /*        2nd page */
+    .con {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .cont {
+    flex: 1;
+    padding-right: 20px;
+    
+  }
+
+  .cont h2 {
+    margin-top: 0;
+    font-size: 2.0rem;
+    color: black;
+  }
+  .cont p{
+
+    color: black;
+  }
+
+  .image {
+    flex: 1;
+    text-align: right;
+  }
+
+  .image img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 80px;
+  }
+
+
+  /* 4th page */
+ 
+
+  .box-1{
+    display:flex;
+    justify-content: space-between;
+    width: 25%;
+  }
+  .box-1 img {
+    padding: 0.5rem;
+  }
+  .box-2 img{
+
+    padding: 0.5rem;
+  }
+  .box6{
+    margin-left: 800px;
+  }
+  .box1 img{
+
+    width: 700px;
+    padding: 0.5rem;
+    
+  }
+  .box3 img{
+
+    
+  }
+  .box4 img{
+           
+    
+  }
+ .box5 img{
+      
+  width: 1200px;
+  height: 500px;
+  margin-top: 580px;
+
+ }
+
+.box6 img{
+
+  width: 800px;
+}
+
+  /* 2nd portion 4th page */
+
+  .box-2{
+    display: flex;
+    
+  }
+   .para p{
+
+    margin-right: 800px;
+   }
+
+  /* 3rd portion 4th page */
+ .box-3{
+
+  display: flex;
+ }
+  .box-4{
+    display: flex;
+  }
+
+                                                        /* page 5th css */
+          
+  .box-5{
+
+           background-color: #112C41;
+           display: flex;
+           
+          }
+  .new-box img{
+
+    padding: 120px;
+  }
+
+  .para3{
+
+    margin-top: 200px;
+    color: #ddd;
+  }
+
+  /* page 6 */
+
+ .box-6{
+
+  background-color:#FFFFFF;
+ }
+
+ .para4{
+
+  padding: 200px;
+ }
+
+ .box-6 p{
+
+  margin-left: 400px;
+ }
+.box-6 img{
+
+  margin-left: 100px;
+}
+
+
+/*           page 7            */
+
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+}
+ul{
+	list-style: none;
+}
+.footer{
+	background-color:black;
+}
+.footer-col1{
+   width: 25%;
+   color: #FFFFFF;
+  align-items: center;
+  margin-left: 800px;
+  
+}
+.footer-col2{
+   width: 25%;
+   color: #FFFFFF;
+  align-items: center;
+  
+  
+}
+.footer-col3{
+   width: 25%;
+   color: #FFFFFF;
+  align-items: center;
+  
+}
+
+.footer-col1 h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+
+}
+.footer-col2 h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col3 h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.logoimg img{
+
+  margin-bottom: 100px;
+}
+</style>
+</head>
+<body>
+  <div class="bg-image">
+    <div class="navbar">
+      <div>
+        <a href="#home">PROJECTS</a>
+        <a href="#about">EXPERTISE</a>
+        <a href="#services">ABOUT US</a>
+        <a href="#contact">PEOPLE</a>
+      </div>
+      <div class="logo"></div>
+      <div class="navbar-b">
+        <a href="#CAREERS">CAREERS</a>
+        <a href="#AU">AU</a>
+      </div>
+    </div>
+    
+    <div class="heading">
+      <p>Home/why with us</p>
+      <h1>HEADLINE#1</h1> 
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+    </div>
+  </div>
+
+  <div class="panel">
+    <div class="margin">
+      <p>we stay connected</p>
+      <p>we believe in diversity and inclusion</p>
+      <p>we celebrate success</p>
+    </div>
+  </div>
+
+              <!----------page 2   --------------------> 
+    <div class="con">
+    <div class="cont">
+      <h2>We <span class="color">stay connected</span></h2>
+      <p>We strive to stay connected as a team through communication and collaboration. This materialises every quarter through our Quarterly Business Update events. These gatherings are immersive sessions where every team
+member, regardless of rank or tenure, comes together to contribute to our overarching business strategy, and stay connected. They are opportunities to learn from our seasoned leaders and to also share personal insights and achievements that can steer our collective future. In an ever-evolving engineering landscape, staying connected isn’t just a benefit—it’s essential.</p>
+    </div>
+    <div class="image">
+      <img src="Rectangle 39.png" alt="Example Image">
+    </div>
+  </div>
+   
+              <!--------------third page -------------------------->
+
+
+  <div class="tpage">
+    <div class="p1">We believe in <span class="color">diversity & inclusion</span></div>
+    <div class="p3">At CaSE we do not just accept difference — we celebrate it, we support it, and we thrive on it for the benefit of our employees, our services, our industry and our community. We are proud to be an equal opportunity
+    employer. Guided by our values and beliefs, we foster an inclusive workplace culture where employees thrive because of their differences, not in spite of them. Our values and beliefs, we foster an inclusive workplace culture where employees thrive because of their differences, not in spite of them Our Commitment to reinventing the standard. With more than 20 nationalities represented in our global workforce, we firmly believe that our ability to deliver high-quality results is fueled by our active efforts to embed diversity and inclusion. We recognize, respect, and strive to create an environment where employees can excel and feel a true sense of belonging. Some of our strategic initiatives include</div>
+
+    <div class="img2">
+      <img src="Group 1593.png" alt="new">
+    </div>
+  </div>
+
+<!---------------------------------------4th page---------------------------------------------------------------------------->
+
+
+<div class="box-1">
+  <div class="box1"><img src="Rectangle 20.png" alt=""></div>
+  <div class="box2"><img src="Rectangle 21.png" alt=""></div>
+  <div class="box3"><img src="Rectangle 22.png" alt=""></div>
+
+  </div>
+
+  <div class="para"><h1>We celebrate <span class="color">success</span></h1>
+    <p>At CaSE we understand that every achievement, big or small, is a result of the hard work and dedication of our team members. We take pride in
+celebrating these moments because they underscore the commitment and effort put into each project.
+Some of our favourite events on the calendar include our coveted Melbourne Cup event and our always amazing Christmas Party. In-between, our
+team celebrate together during team cycling events, regular team dinners and social morning teas to celebrate milestones and special days. Taking the time to celebrate wins is our way of showing gratitude and ensuring everyone knows their efforts make a difference.
+</p>
+    </div>
+<div class="box-2">
+  <div class="box4"><img src="Rectangle 23.png" alt=""></div>
+  <div class="box5"><img src="Rectangle 27.png" alt=""></div>
+  </div>
+   <div class="box-3">
+   <div class="para2"> <h1>Employee<span class="color">Appreciation Program</span> </h1>
+    <p >Our Employee Appreciation Program is tailored to honor the ongoing commitment and efforts of our long-serving team members. Our 5 Year Club
+and 10 Year Club are special milestones within this program, celebrating employees who have dedicated half a decade or a full decade to our
+company mission. Each year, members of these clubs are invited to annual events held at select, memorable locations, reflecting our gratitude and
+recognition of their unwavering dedication. It's our way of saying thank you and ensuring that every significant chapter in our collective journey is
+celebrated with the grandeur it deserves
+
+      </p></div>
+    <div class="box6"><img src="Rectangle 29.png" alt=""></div>
+    </div>
+  
+
+  <div class="box-4">
+    <div class="box7"><img src="Rectangle 30.png" alt=""></div>
+    <div class="box8"><img src="Rectangle 31.png" alt=""></div>
+    </div>
+
+    <!----------------------------------------------------5th page----------------------------------------------->
+
+    <div class="box-5">
+       
+               <div class="new-box"><img src="Rectangle 19.png" alt=""></div>
+               <div class="para3"><h1><span class="color">"</span></h1>
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, voluptatem aut! Adipisci, eaque aliquam quis maxime quos enim eum ratione perspiciatis doloremque necessitatibus minima reiciendis, inventore deleniti vero obcaecati officiis.</p></div>
+               
+      </div>
+
+      <!---page 6-->
+
+      <div class="box-6">
+         
+           <div class="para4"> <h1>As a<span class="color">global business</span> , we encourage you to contact us no matter where you are located in the world.</h1>
+                     <p >Browse our job opportunities across the globe.</p></div>
+          <img src="Group 1585.png" alt="new">   
+
+        </div>
+        
+        <!--------------------------------------------footer----page-7------------------------------------------------------>
+
+        <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col1">
+  	 			<h4>EXPERTISE</h4>
+  	 			<ul>
+  	 				<li><a href="#">about us</a></li>
+  	 				<li><a href="#">our services</a></li>
+  	 				<li><a href="#">privacy policy</a></li>
+  	 				<li><a href="#">affiliate program</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col2">
+  	 			<h4>sector</h4>
+  	 			<ul>
+  	 				<li><a href="#">FAQ</a></li>
+  	 				<li><a href="#">shipping</a></li>
+  	 				<li><a href="#">returns</a></li>
+  	 				<li><a href="#">order status</a></li>
+  	 				<li><a href="#">payment options</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-col3">
+  	 			<h4>our business</h4>
+  	 			<ul>
+  	 				<li><a href="#">watch</a></li>
+  	 				<li><a href="#">bag</a></li>
+  	 				<li><a href="#">shoes</a></li>
+  	 				<li><a href="#">dress</a></li>
+  	 			</ul>
+  	 		</div> 
+  	 	</div>
+  	 </div> 
+     <div class="logoimg">
+          <img src="Group 1484.png" alt="img">
+          </div>    
+  </footer>
+</body>
+</html>
